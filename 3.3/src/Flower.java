@@ -19,5 +19,9 @@ public  abstract class Flower {
 	}
 	public int getPrice() {
 		return price;
+	
 }
+	public String toString(){
+	return this.name+" "+this.color+" "+this.price;
+	}
 }

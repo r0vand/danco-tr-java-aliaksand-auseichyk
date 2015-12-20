@@ -1,32 +1,24 @@
 
 public class Bouquet {
-private	Flower[] flower = new Flower[3];
-private int priceBouquet;
-private int quantity;
+	private Flower[] flower = new Flower[3];
+	private int quantity;
 
-public Flower[] getFlower() {
-	return flower;
-}
+	public Flower[] getFlower() {
+		return flower;
+	}
 
-public void setFlower(Flower[] flower) {
-	this.flower = flower;
-}
+	public void setFlower(Flower[] flower) {
+		this.flower = flower;
+	}
 
-public void addFlower(Flower flower) {
+	public void addFlower(Flower flower) {
 
-	this.flower[quantity] = flower;
-	quantity++;
+		this.flower[quantity] = flower;
+		quantity++;
+	}
 
-	System.out.println(flower);
-}
-
-public int getPriceBouquet() {
-	return priceBouquet;
-}
-
-public void setPriceBouquet(int priceBouquet) {
-	this.priceBouquet = priceBouquet;
-}
-
-
+	
+	public String toString(){
+		return this.flower[0]+" "+this.flower[1]+" "+this.flower[2]+" "+this.quantity;
+		}
 }
